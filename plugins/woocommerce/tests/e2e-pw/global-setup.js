@@ -34,7 +34,7 @@ module.exports = async ( config ) => {
 		console.log( 'Customer state file deleted successfully.' );
 	} catch ( err ) {
 		if ( err.code === 'ENOENT' ) {
-			console.log( 'Customer state file does not exist.' );
+			console.log( 'Customer state file does not exist' );
 		} else {
 			console.log( 'Customer state file could not be deleted: ' + err );
 		}
